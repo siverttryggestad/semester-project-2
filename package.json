@@ -1,0 +1,28 @@
+{
+  "name": "semester-project-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "sass --watch scss/main.scss css/style.css",
+  "build": "sass scss/main.scss css/style.css --style=compressed"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siverttryggestad/semester-project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/siverttryggestad/semester-project-2/issues"
+  },
+  "homepage": "https://github.com/siverttryggestad/semester-project-2#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.9"
+  },
+  "devDependencies": {
+    "sass": "^1.108.2"
+  }
+}
