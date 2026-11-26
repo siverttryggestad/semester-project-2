@@ -11876,5 +11876,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 992px) {
+  .bidly-navbar {
+    display: grid;
+    grid-template-columns: 1fr 15rem 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .bidly-navbar .navbar-brand {
+    justify-self: start;
+  }
+  .bidly-navbar .justify-self-end {
+    justify-self: end;
+  }
+}
+.home-hero {
+  display: grid;
+  background-color: #eff6ff;
+  place-content: center;
+  min-height: clamp(17rem, 32vw, 24rem);
+  padding: 2rem 1rem;
+}
+
+.listing-card-image {
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+}
+
+body {
+  background-color: #eff6ff;
+}
 
 /*# sourceMappingURL=style.css.map */
