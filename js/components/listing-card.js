@@ -1,4 +1,4 @@
-function formatTimeLeft(endsAt) {
+export function formatTimeLeft(endsAt) {
   const remaining = Date.parse(endsAt) - Date.now();
 
   if (!Number.isFinite(remaining)) return "End time unavailable";
@@ -14,7 +14,7 @@ function formatTimeLeft(endsAt) {
   return `Ends in ${minutes}m`;
 }
 
-function formatCurrentBid(bids) {
+export function formatCurrentBid(bids) {
   if (!Array.isArray(bids)) return "Bid unavailable";
   if (bids.length === 0) return "No bids yet";
 

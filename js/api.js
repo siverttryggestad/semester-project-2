@@ -22,3 +22,16 @@ export async function getActiveListings(query = "") {
   const { data } = await response.json();
   return data;
 }
+
+export async function getListingById(id) {
+  const response = await fetch(
+    `${API_BASE_URL}/auction/listings/${encodeURIComponent(id)}?_seller=true&_bids=true`
+  );
+
+  if (!response.ok) {
+    throw new Error(`Could not load auction (${response.status})`);
+  }
+
+  const { data } = await response.json();
+  return data;
+}
